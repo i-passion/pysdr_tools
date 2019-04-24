@@ -3,7 +3,7 @@
 ## Installation
 ```
 $ sudo apt-get install python-pip git
-$ sudo pip install pyrtlsdr numpy matplotlib
+$ sudo pip install pyrtlsdr
 $ git clone https://github.com/BG6WRI/pyrtlsdr_tools
 $ cd pyrtlsdr_tools
 ```
