@@ -26,8 +26,8 @@ while True:#总任务
         for v in range(n):#n个fft点
             I=struct.unpack('f',client.recv(4))[0]
             Q=struct.unpack('f',client.recv(4))[0]
-            sample.append(complex(I,Q))  
-        Y = np.fft.fftshift(np.fft.fft(sample))/n 
+            sample.append(complex(I,Q))
+        Y = np.fft.fftshift(np.fft.fft(sample))/N
         Y = abs(Y)
         Z = Z + Y
 
