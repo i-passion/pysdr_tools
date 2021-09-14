@@ -71,7 +71,7 @@ while True:
 
 		raw=sdr.read_samples(n)
 		#YY = np.fft.fft(raw) # no normalization
-		Y = np.fft.fftshift(np.fft.fft(raw))/n # fft computing and normalization
+		Y = np.fft.fftshift(np.fft.fft(raw))/I_nums # fft computing and normalization
 		Y = abs(Y)
 		Z=Z+Y
 
